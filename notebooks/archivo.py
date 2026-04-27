@@ -15,9 +15,9 @@ import matplotlib.pyplot as plt
 #%%
 # Cargamos las tablas que nos pasan por consigna
 
-Establecimientos_educativos = pd.read_excel('2022_padron_oficial_establecimientos_educativos.xlsx', skiprows=6)
-Bibliotecas_populares = pd.read_csv('bibliotecas-populares.csv')
-censo = pd.read_excel('padron_poblacion.xlsX', skiprows=12) #se saltean las primeras 12 filas pues no contienen información relevante
+Establecimientos_educativos = pd.read_excel('../data/raw/2022_padron_oficial_establecimientos_educativos.xlsx', skiprows=6)
+Bibliotecas_populares = pd.read_csv('../data/raw/bibliotecas-populares.csv')
+censo = pd.read_excel('../data/raw/padron_poblacion.xlsX', skiprows=12) #se saltean las primeras 12 filas pues no contienen información relevante
 censo = censo.loc[:56583]
 
 #%% 
@@ -394,12 +394,12 @@ esta_formada_por = crear_esta_formada_por(Establecimientos_educativos)
 
 
 #%%
-esta_formada_por.to_csv("TablasModelo/esta_formada_por.csv", index=False)
-poblacion.to_csv("TablasModelo/poblacion.csv", index=False)
-niveles.to_csv("TablasModelo/niveles.csv", index=False)
-ee.to_csv("TablasModelo/ee.csv", index=False)
-departamento.to_csv("TablasModelo/departamento.csv", index=False)
-bp.to_csv("TablasModelo/bp.csv", index=False)
+esta_formada_por.to_csv("../data/processed/esta_formada_por.csv", index=False)
+poblacion.to_csv("../data/processed/poblacion.csv", index=False)
+niveles.to_csv("../data/processed/niveles.csv", index=False)
+ee.to_csv("../data/processed/ee.csv", index=False)
+departamento.to_csv("../data/processed/departamento.csv", index=False)
+bp.to_csv("../data/processed/bp.csv", index=False)
 
 #%%
 #                       CONSULTAS SQL
