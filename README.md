@@ -34,3 +34,11 @@ Todos los datasets originales se encuentran alojados en la carpeta `data/raw/`. 
 * **Establecimientos Educativos (2022):** [Padrón Oficial - Ministerio de Educación](https://www.argentina.gob.ar/educacion/evaluacion-e-informacion-educativa/padron-oficial-de-establecimientos-educativos)
 * **Bibliotecas Populares:** [Mapa Cultural - Datos Argentina](https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_01c6c048-dbeb-44e0-8efa-6944f73715d7)
 * **Población por Departamento (Censo 2022):** [Portal INDEC](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165)
+
+## 💻 Cómo Ejecutar el Proyecto
+
+1. Descargá o cloná este repositorio en tu computadora.
+2. Asegurate de tener instalado Python y las librerías necesarias ejecutando el siguiente comando en tu terminal:
+   `pip install pandas duckdb matplotlib openpyxl ipykernel`
+3. Abrí el archivo `analisis_tp.ipynb` (ubicado dentro de la carpeta `notebooks/`) utilizando Visual Studio Code, Jupyter Notebook o Google Colab.
+4. Ejecutá las celdas en orden. Las rutas relativas a los datasets originales (`data/raw/`) y a los archivos procesados (`data/processed/`) ya están configuradas para funcionar correctamente de forma local.
